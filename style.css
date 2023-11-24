@@ -14,6 +14,11 @@
 background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(144,144,144,1) 59%, rgba(208,208,208,1) 93%);
 } 
 .container{
+    display: grid;
+    grid-row: 4;
+}
+.widget{
+    display: none;
     width: 400px;
     height: 500px;
     background: rgb(0,0,0);
@@ -80,41 +85,53 @@ background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(144,144,144,1) 59%, 
     gap: 10px;
     margin-bottom: 20px;
 }
+/* Styling for the input box */
 .input-box {
     display: flex;
-    gap: 10px;
-    background: rgb(0,0,0);
-    background: linear-gradient(40deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 59%, rgba(77,77,77,1) 96%);
-   padding: 10px;
-   margin-bottom: 30px;
-   border: #ffffff solid 2px;
-   border-radius: 12px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    max-width: auto;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(40deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 59%, rgba(77, 77, 77, 1) 96%);
+    padding: 10px;
+    margin-bottom: 30px;
+    border: #ffffff solid 2px;
+    border-radius: 8px;
 }
-.input-text input{
+
+/* Styling for the text input within the input box */
+.input-text input {
     width: 16rem;
     height: 3rem;
     border: #ffffff solid 2px;
-    border-radius: 22px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
-.search-btn{
-     display: flex;
-     align-items: center;
-     padding: 10px 20px;
-     font-size: 16px;
-      background-color: #ffffff;
-      color: #ffffff;
-     border: none;
-      cursor: pointer;
-      border-radius: 22px;
-      
+
+/* Styling for the search button */
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius:16px ;
+    border-bottom-right-radius: 16px;
 }
-.search-btn button{
+
+/* Styling for the inner button element within the search button */
+.search-btn button {
     border: none;
     background-color: inherit;
 }
+
+/* Styling for the image associated with the search button */
 .search-img {
-    margin-right: 8px; /* Расстояние между изображением и текстом */
-  width: 28px; /* Ширина изображения */
-  height: 28px; /* Высота изображения */
-  
+    margin-right: 8px;
+    width: 28px;
+    height: 28px;
 }
